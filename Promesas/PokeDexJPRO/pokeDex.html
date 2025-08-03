@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeDex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sección izquierda -->
+    <div class="PanelIzquierdo">
+      <img src="./img/pokedex.avif" alt="Logo Pokémon" class="logo" />
+      <form id="search-form">
+        <input type="text" id="pokemon-name" placeholder="Nombre del Pokémon" required />
+        <button type="submit">Buscar</button>
+      </form>
+    </div>
+
+    <!-- Sección derecha -->
+    <div class="PanelDerecho">
+      <img id="imagen-portada" src="./img/Charizard.png" alt="Charizard" class="imagen-portada" />
+
+      <!-- Tarjeta -->
+      <div id="poke-tarjeta" class="poke-tarjeta">
+        <img id="poke-foto" alt="Imagen del Pokémon">
+        <div class="cuerpo-tarjeta">
+          <h5 id="poke-nombre" class="poke-nombre"></h5>
+          <ul id="estadisticas" class="estadisticas"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="pokeApi.js"></script>
+</body>
+</html>
